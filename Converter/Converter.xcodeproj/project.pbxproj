@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7601E9825739CB300F5C9E4 /* CurrentConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7601E9725739CB300F5C9E4 /* CurrentConverter.swift */; };
+		C7601E9A2573FDA500F5C9E4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7601E992573FDA500F5C9E4 /* APIManager.swift */; };
+		C7601E9C2574048200F5C9E4 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7601E9B2574048200F5C9E4 /* ErrorManager.swift */; };
+		C7601E9E2574108800F5C9E4 /* APIConverterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7601E9D2574108800F5C9E4 /* APIConverterManager.swift */; };
 		C7B1107925721F7100315642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1107825721F7100315642 /* AppDelegate.swift */; };
 		C7B1107B25721F7100315642 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1107A25721F7100315642 /* ViewController.swift */; };
 		C7B1107E25721F7100315642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B1107C25721F7100315642 /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7601E9725739CB300F5C9E4 /* CurrentConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConverter.swift; sourceTree = "<group>"; };
+		C7601E992573FDA500F5C9E4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C7601E9B2574048200F5C9E4 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		C7601E9D2574108800F5C9E4 /* APIConverterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConverterManager.swift; sourceTree = "<group>"; };
 		C7B1107525721F7100315642 /* Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B1107825721F7100315642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B1107A25721F7100315642 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 				C7B1109225722D4400315642 /* ConverterDataModel.swift */,
 				C7B1109425722DF000315642 /* ConverterLanguageModel.swift */,
 				C7B1109625722F0700315642 /* NetworkConverterManager.swift */,
+				C7601E9725739CB300F5C9E4 /* CurrentConverter.swift */,
+				C7601E992573FDA500F5C9E4 /* APIManager.swift */,
+				C7601E9D2574108800F5C9E4 /* APIConverterManager.swift */,
+				C7601E9B2574048200F5C9E4 /* ErrorManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,7 +113,6 @@
 			children = (
 				C7B1107A25721F7100315642 /* ViewController.swift */,
 				C7B110982572386000315642 /* MenyuViewController.swift */,
-				C7B1109A2572387600315642 /* MenyuTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 			children = (
 				C7B1107825721F7100315642 /* AppDelegate.swift */,
 				C7B1108A257221D900315642 /* TableViewCell.swift */,
+				C7B1109A2572387600315642 /* MenyuTableViewCell.swift */,
 				C7B1107F25721F7300315642 /* Assets.xcassets */,
 				C7B1108425721F7300315642 /* Info.plist */,
 			);
@@ -206,10 +218,14 @@
 			files = (
 				C7B1108B257221D900315642 /* TableViewCell.swift in Sources */,
 				C7B110A12572665200315642 /* AlertController.swift in Sources */,
+				C7601E9825739CB300F5C9E4 /* CurrentConverter.swift in Sources */,
 				C7B1107B25721F7100315642 /* ViewController.swift in Sources */,
+				C7601E9A2573FDA500F5C9E4 /* APIManager.swift in Sources */,
 				C7B1109525722DF000315642 /* ConverterLanguageModel.swift in Sources */,
+				C7601E9C2574048200F5C9E4 /* ErrorManager.swift in Sources */,
 				C7B1109325722D4400315642 /* ConverterDataModel.swift in Sources */,
 				C7B1109B2572387600315642 /* MenyuTableViewCell.swift in Sources */,
+				C7601E9E2574108800F5C9E4 /* APIConverterManager.swift in Sources */,
 				C7B1107925721F7100315642 /* AppDelegate.swift in Sources */,
 				C7B110992572386000315642 /* MenyuViewController.swift in Sources */,
 				C7B1109725722F0700315642 /* NetworkConverterManager.swift in Sources */,

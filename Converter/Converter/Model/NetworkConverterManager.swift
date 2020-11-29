@@ -8,25 +8,38 @@
 
 import Foundation
 struct NetworkConverterManager {
-    func fetchData(_ url: String, countrName: String, yearMounthDay: String){
-        guard let url = URL(string: url) else { return }
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let data = data{
-                let converted = self.parseJSON(withData: data)
-                print(converted)
+    
+    
+    func fetchData(url: String, completionHandler: @escaping (CurrentConverter) -> Void){
+        guard let url = URL(string: url) else { return}
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let task = session.dataTask(with: url) { (data, response, error) in
+            if let data = data {
+                do{
+                    if let currentConverter = self.parseJSON(withData: data){
+                        completionHandler(currentConverter)
+                    }
+                }catch {
+                    print("error ------1")
+                }
+            }else {
+                print("error \(error?.localizedDescription ?? "ERROR")")
             }
+            
         }
         task.resume()
     }
-
-
-    fileprivate func parseJSON(withData data: Data) {
+    func parseJSON(withData data: Data) -> CurrentConverter?{
         let decoder = JSONDecoder()
         do {
-            let currentConverterData = try decoder.decode(ConverterDataModel.self, from: data)
-            print(currentConverterData)
-        } catch let error as NSError {
-            print(error.localizedDescription)
+            let currentDataModel = try decoder.decode(ConverterDataModelElement.self, from: data)
+            print("\(currentDataModel.from)")
+            guard let currentConverter = CurrentConverter(converterDataModelElement: currentDataModel) else { return nil}
+            
+            return currentConverter
+        } catch {
+            print("error--------2")
         }
+        return nil
     }
 }

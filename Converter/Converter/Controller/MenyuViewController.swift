@@ -10,9 +10,11 @@ import UIKit
 
 class MenyuViewController: UIViewController {
 
+
+    @IBOutlet weak var tableViewMenyu: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -39,7 +41,7 @@ extension MenyuViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenyuTableViewCell
-        cell.textLabel?.text = "\(indexPath.row)"
+        cell.textLabel?.text = "\(indexPath.row) "
         
         return cell
     }
