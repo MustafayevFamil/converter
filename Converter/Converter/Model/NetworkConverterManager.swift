@@ -35,7 +35,7 @@ struct NetworkConverterManager {
             let currentDataModel = try decoder.decode(ConverterDataModelElement.self, from: data)
             print("\(currentDataModel.from)")
             guard let currentConverter = CurrentConverter(converterDataModelElement: currentDataModel) else { return nil}
-            
+            print(currentConverter)
             return currentConverter
         } catch {
             print("error--------2")

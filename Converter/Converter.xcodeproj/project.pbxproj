@@ -57,6 +57,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C76D0B472574D4D600007783 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C7601E9D2574108800F5C9E4 /* APIConverterManager.swift */,
+				C7B1109625722F0700315642 /* NetworkConverterManager.swift */,
+				C7601E992573FDA500F5C9E4 /* APIManager.swift */,
+				C7601E9B2574048200F5C9E4 /* ErrorManager.swift */,
+			);
+			name = Network;
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C7B1106C25721F7100315642 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,7 @@
 				C7B1108C25722ADE00315642 /* Model */,
 				C7B1108D25722AED00315642 /* View */,
 				C7B1108E25722AF600315642 /* Controller */,
+				C76D0B472574D4D600007783 /* Network */,
 				C7B1109025722B0A00315642 /* Extension */,
 				C7B1108F25722AFF00315642 /* Support files */,
 			);
@@ -90,11 +103,7 @@
 			children = (
 				C7B1109225722D4400315642 /* ConverterDataModel.swift */,
 				C7B1109425722DF000315642 /* ConverterLanguageModel.swift */,
-				C7B1109625722F0700315642 /* NetworkConverterManager.swift */,
 				C7601E9725739CB300F5C9E4 /* CurrentConverter.swift */,
-				C7601E992573FDA500F5C9E4 /* APIManager.swift */,
-				C7601E9D2574108800F5C9E4 /* APIConverterManager.swift */,
-				C7601E9B2574048200F5C9E4 /* ErrorManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
